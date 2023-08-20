@@ -293,6 +293,7 @@ button,
   row-gap: 30px;
 }
 
+/* layout--landing start */
 .layout--landing {
   grid-template-areas: "header" "content-1" "footer";
   font-family: "Montserrat", "Arial", sans-serif;
@@ -339,6 +340,64 @@ button,
 .layout--landing .footer .add-img-btn:focus svg {
   fill: #80ccf0;
 }
+/* layout--landing end */
+
+/* layout--blog start */
+.layout--blog {
+  grid-template-columns: 43fr 70fr;
+  grid-template-areas: "header header" "content-1 content-2" "footer footer";
+  background-color: #f5f5f5;
+}
+
+.layout--blog .header,
+.layout--blog .footer {
+  color: #ffffff;
+  background-color: #3a3e46;
+}
+
+.layout--blog .header::before,
+.layout--blog .footer::before {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23fff' stroke-width='2' stroke-dasharray='15%2c 15' stroke-dashoffset='8' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.layout--blog .header .element::before,
+.layout--blog .footer .element::before {
+  box-shadow: inset 0 0 0 1px #ffffff;
+}
+
+.layout--blog .header .add-img-btn svg,
+.layout--blog .footer .add-img-btn svg {
+  fill: #ffffff;
+}
+
+.layout--blog .header .add-img-btn:hover svg,
+.layout--blog .header .add-img-btn:focus svg,
+.layout--blog .footer .add-img-btn:hover svg,
+.layout--blog .footer .add-img-btn:focus svg {
+  fill: #80ccf0;
+}
+
+.layout--blog .header__elements-wrapper,
+.layout--blog .content__elements-wrapper,
+.layout--blog .footer__elements-wrapper {
+  font-family: "PTAstraSans", "Arial", sans-serif;
+}
+
+.layout--blog .title [contenteditable=true] {
+  font-weight: 400;
+}
+
+.layout--blog .content-1 .choose-elem {
+  left: -20px;
+  right: auto;
+  transform: none;
+}
+
+.layout--blog .content-2 .choose-elem {
+  right: -20px;
+  transform: none;
+}
+/* layout--blog end */
 
 .placeholder {
   position: absolute;
@@ -435,7 +494,7 @@ button,
 
   font-size: 16px;
   line-height: 18px;
-  
+
   border: 1px solid #cecece;
   border-radius: 8px;
   transform: translateY(50%);
