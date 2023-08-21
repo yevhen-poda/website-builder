@@ -399,6 +399,66 @@ button,
 }
 /* layout--blog end */
 
+/* layout--shop start */
+.layout--shop {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "content-1 content-2 content-3" "footer footer footer";
+}
+
+.layout--shop .header__elements-wrapper,
+.layout--shop .content__elements-wrapper,
+.layout--shop .footer__elements-wrapper {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+.layout--shop .header .add-img-btn svg {
+  fill: #3a3e46;
+}
+
+.layout--shop .header .add-img-btn:hover svg,
+.layout--shop .header .add-img-btn:focus svg {
+  fill: #80ccf0;
+}
+
+.layout--shop .content {
+  background-color: #f4f4f4;
+}
+
+.layout--shop .content-1 .choose-elem {
+  left: -20px;
+  right: auto;
+  transform: none;
+}
+
+.layout--shop .content-3 .choose-elem {
+  right: -20px;
+  transform: none;
+}
+
+.layout--shop .footer {
+  background-color: #adadad;
+}
+
+.layout--shop .footer .delete-btn {
+  background-color: #3a3e46;
+}
+
+.layout--shop .footer .delete-btn:hover,
+.layout--shop .footer .delete-btn:focus {
+  background-color: #eb5757;
+}
+
+.layout--shop .footer .add-img-btn svg {
+  fill: #3a3e46;
+}
+
+.layout--shop .footer .add-img-btn:hover svg,
+.layout--shop .footer .add-img-btn:focus svg {
+  fill: #80ccf0;
+}
+/* layout--shop end */
+
 .placeholder {
   position: absolute;
   left: 50%;
